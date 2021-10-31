@@ -1,2 +1,2 @@
 # Predict-number
-Predict the next number from the sequence
+Predict the next number from the sequence C++
