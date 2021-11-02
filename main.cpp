@@ -36,7 +36,7 @@ template <typename T>
 void doPrediction(vector<T>&input)
 {
  if (input.size()<3){
-  cout << "At least 3 values required!\n";
+  cout << "At least 3 values required for training!\n";
   return;
  }
  for(typename vector<T>::iterator it = input.begin() ; it != input.end() ; ++it)
@@ -78,7 +78,7 @@ int main() {
  cout << "Predict 6: ";
  doPrediction(vData3_02);
  cout << endl;
-// - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - BASICS - - - - - - - - - - - - - - - - - - - - - - - - - - //
  vector<int> vData3_1{19, 20, 21};
  cout << "Linear Predict 7: ";
  doPrediction(vData3_1);
@@ -94,12 +94,12 @@ int main() {
  doPrediction(vData5);
  cout << endl;
 // - - - - - - - - - - - - - - - - - - - - -
- vector<int> vData6{5,4,3,2};
+ vector<int> vData6{1,4,9,16,25,36};
  cout << "Predict 10: ";
  doPrediction(vData6);
  cout << endl;
 // - - - - - - - - - - - - - - - - - - - - -
- vector<int> vData7{2,4,6,8};
+ vector<int> vData7{2,5,11,17,23};
  cout << "Predict 11: ";
  doPrediction(vData7);
  cout << endl;
