@@ -27,7 +27,7 @@ float predict(vector<float>&input)
   x.push_back(input[i+1] - input[i]);
 
  float f = x[1]/x[0];
- return (input.back() + (x.back() * f ));
+ return (input.back() + (x.back() * f));
 }
 
 
@@ -36,7 +36,7 @@ template <typename T>
 void doPrediction(vector<T>&input)
 {
  if (input.size()<3){
-  cout << "At least 3 values required for training!\n";
+  cout << "At least 3 values required for predict next number in the based on the rule!" << endl;
   return;
  }
  for(typename vector<T>::iterator it = input.begin() ; it != input.end() ; ++it)
@@ -48,6 +48,7 @@ void doPrediction(vector<T>&input)
 
 
 int main() {
+  cout << "----------Predict next number based on the rule with integer values!----------" << endl << endl;
 // Prediction examples
  vector<int> vData1{4,7,13,25,49};
  cout << "Predict 1: " ;
