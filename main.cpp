@@ -90,7 +90,7 @@ int main() {
  doPrediction(vData4);
  cout << endl;
 // - - - - - - - - - - - - - - - - - - - - -
- vector<int> vData5{25,20,15,10};
+ vector<int> vData5{10,1,2,9,3,8,4,7};
  cout << "Predict 9: ";
  doPrediction(vData5);
  cout << endl;
